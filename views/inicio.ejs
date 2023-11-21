@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stocker</title>
+    <link rel="stylesheet" href="styles/inicio.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand logo-inicio" href="/inicio">
+          <img
+            src="./image/logo_acemar.png"
+            class="img-fluid logo-inicio"
+            alt="Descripción de la imagen"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"
+            ><img src="/image/logo_acemar.png" alt=""
+          /></span>
+        </button>
+        <div
+          class="collapse navbar-collapse div-link"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link d-flex justify-content-center" href="/inicio"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex justify-content-center" href="/duracion"
+                >Duración Inventario</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex justify-content-center" href="#">
+                Cantidad a comprar<br />
+                por 3 meses
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex justify-content-center" href="#"
+                >producto a pedir</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link d-flex justify-content-center" href="#"
+                >Producto sobre stockeado</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item text-end">
+              <a class="nav-link"><h3>Stocker</h3></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="contenido">
+      <div class="card">
+        <img src="/image/duracion.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Duracion Inventario</h5>
+          <p class="card-text">
+            ¿Cuánto tiempo dura tu inventario?
+          </p>
+          <a href="/duracion" class="btn btn-primary">Consultar duración de inventario</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/image/cantidadcomprar.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Cantidad a comprar por 3 meses</h5>
+          <p class="card-text">
+            ¿Cuánto comprar para los próximos 3 meses?
+          </p>
+          <a href="cantidadCompra" class="btn btn-primary">Calcular cantidad de compra</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/image/productopedir.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Productos a pedir</h5>
+          <p class="card-text">
+            ¿Qué pedir?
+          </p>
+          <a href="productospedir" class="btn btn-primary">Consultar productos a pedir</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="/image/sobrestock.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">Cantidad sobrestock</h5>
+          <p class="card-text">
+            ¿Qué tienes de más?
+          </p>
+          <a href="sobrestockeado" class="btn btn-primary">Consultar inventario sobrestockeado</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

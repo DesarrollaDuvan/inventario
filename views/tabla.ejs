@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tabla de Resultados</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.css">
+  </head>
+  <body>
+    <div id="miTablaContainer" style="overflow-x: auto;">
+      <table id="miTabla" class="result-table" style="width:100%;">
+        <thead>
+          <tr>
+            <th scope="col">Producto</th>
+            <th scope="col">Inventario</th>
+            <th scope="col">Ventas</th>
+            <th scope="col">Duracion</th>
+            <th scope="col">Cantidad comprar</th>
+            <th scope="col">Estado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% for (let i = 0; i < tableData.length; i++) { %>
+            <tr>
+              <td><%= tableData[i].producto %></td>
+              <td><%= tableData[i].inventario %></td>
+              <td><%= tableData[i].ventas %></td>
+              <td><%= tableData[i].duracion %></td>
+              <td><%= tableData[i].cantidadComprar %></td>
+              <td><%= tableData[i].estado %></td>
+            </tr>
+          <% } %>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#miTabla').DataTable({
+          searching: true
+        });
+      });
+    </script>
+  </body>
+</html>
